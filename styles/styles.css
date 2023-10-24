@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+  width: 50%;
+  background-color: beige;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+}
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 16px;
+}
