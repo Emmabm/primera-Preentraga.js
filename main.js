@@ -1,41 +1,13 @@
-const txtOp1 = document.getElementById("op1");
-const txtOperacion = document.getElementById("operacion");
-const txtOp2 = document.getElementById("op2");
-const btnCalcular = document.getElementById("calcular");
-const pResultado = document.getElementById("resultado");
 
-//btn calcular
-btnCalcular, addEventListener("click", calcular);
+let numero = prompt("Ingrese un número que desea multiplicar ")
 
-function calcular() {
-    const operacion = txtOperacion.value;
-    const op1 = parseFloat(txtOp1.value);
-    const op2 = parseFloat(txtOp2.value);
+if (numero == 0 ) {
+    alert("error")
+} else {
+   alert("calculo posible")
 
+for (let i=0; i<=10; i += 1) {
+    alert(i+ " x " + numero + " = " + i * numero)
 
-    if ((operacion == "+" || operacion == "-" || operacion == "*" || operacion == "/") && !isNaN(op1) && !isNaN(op2)) {
-        let resultado;
-        switch (operacion) {
-            case "+":
-                resultado = op1 + op2
-                break
-            case "-":
-                resultado = op1 - op2
-                break;
-
-            case "*":
-                resultado = op1 * op2
-                break;
-
-            case "/":
-                resultado = op1 / op2
-                break;
-        }
-        pResultado.style="color:blue"
-        pResultado.innerText = "=" + resultado;
-    } else {
-        pResultado.style="color:red"
-        pResultado.innerText = "No se puede calcular";
-    }
-
+}
 }
